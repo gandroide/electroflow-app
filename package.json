@@ -10,6 +10,7 @@
     "@types/jest": "^26.0.24",
     "@types/node": "^12.20.48",
     "firebase": "8.5",
+    "firebase-admin": "^13.0.2",
     "install": "^0.13.0",
     "leaflet": "^1.8.0",
     "lodash": "^4.17.21",

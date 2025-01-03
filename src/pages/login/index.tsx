@@ -40,17 +40,15 @@ export const Login = () => {
   }
 
   return (
-    <>
-      <Container>
-        <CircularContainer>
-          <InitialImage src="./tfalcon.jpg" style={{ width: '100%' }} alt="" />
-        </CircularContainer>
-        <Form
-          title="Login"
-          fields={loginUserFields}
-          onSubmitCallback={onSubmitLoginHandler}
-        />
-      </Container>
-    </>
+    <Container>
+      <CircularContainer>
+        <InitialImage src="./tfalcon.jpg" style={{ width: '100%' }} alt="" />
+      </CircularContainer>
+      <Form
+        title="Login"
+        fields={loginUserFields}
+        onSubmitCallback={onSubmitLoginHandler}
+      />
+    </Container>
   );
 };

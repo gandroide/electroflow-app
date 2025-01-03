@@ -15,14 +15,17 @@ export const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
-      <Route path="/home" element={<ProtectedRoute isClosedRoute />}>
+      <Route
+        path="/home"
+        // element={<ProtectedRoute isClosedRoute />}
+      >
         <Route path="/home" element={<Home />} />
       </Route>
       <Route path="/pesagem" element={<Birds />} />
       <Route path="/user_registry" element={<UserRegistry />} />
       <Route
         path="/admin"
-        element={<ProtectedRoute isAdminRoute isClosedRoute />}
+        // element={<ProtectedRoute isAdminRoute isClosedRoute />}
       >
         <Route path="/admin" element={<Admin />}>
           <Route path="" element={<Users />} />
